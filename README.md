@@ -2,9 +2,7 @@
 
 real-time React/Redux application using
 | React (with hooks) | Redux (@reduxjs/toolkit) |
-|--------------------------|--------------------------|--------------------------|--------------------------|
-
-## Link to app
+|--------------------------|--------------------------|
 
 ## [Link to app](https://skilla-test-snowy.vercel.app/)
 

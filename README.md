@@ -1,7 +1,7 @@
 # CRM-test
 
 real-time React/Redux application using
-| AJAX | REST | React (with hooks) | Redux (@reduxjs/toolkit) |
+| React (with hooks) | Redux (@reduxjs/toolkit) |
 |--------------------------|--------------------------|--------------------------|--------------------------|
 
 ## Link to app

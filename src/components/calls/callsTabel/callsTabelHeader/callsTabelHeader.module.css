@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 10px 40px;
+  height: 45px;
+  color: rgba(0, 0, 0, 0.6);
+  list-style-type: none;
+}
+
+.type {
+  flex-basis: 54px;
+}
+
+.time {
+  cursor: pointer;
+  position: relative;
+  flex-basis: 88px;
+}
+
+.employee {
+  flex-basis: 129px;
+}
+
+.call {
+  flex-basis: 325px;
+}
+
+.source {
+  flex-basis: 214px;
+}
+
+.result {
+  flex-basis: 461px;
+}
+
+.duration {
+  position: relative;
+  cursor: pointer;
+  flex-basis: 110px;
+}
+
+.arrow path:hover,
+.duration:hover,
+.time:hover,
+.time:hover .arrow path,
+.duration:hover .arrow path {
+  color: #002cfb;
+  fill: #002cfb;
+}
+
+.arrow {
+  position: absolute;
+  margin-left: 5px;
+  top: 10px;
+}

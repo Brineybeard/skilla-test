@@ -1,0 +1,175 @@
+.body {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  min-height: 65px;
+  list-style-type: none;
+  border-top: 1px solid #e6e6e6;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.body:hover {
+  background: #f1f4f9;
+}
+
+.nonCall,
+.incoming,
+.outgoing,
+.skipped {
+  width: 12.52px;
+  height: 12.52px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nonCall {
+  background-image: url(/public/media/nonCall.svg);
+}
+
+.incoming {
+  background-image: url(/public/media/incoming.svg);
+}
+
+.outgoing {
+  background-image: url(/public/media/outgoing.svg);
+}
+
+.skipped {
+  background-image: url(/public/media/skipped.svg);
+}
+
+.stateExcellent,
+.stateBad,
+.stateGood {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 6px 8px;
+  border-width: 1px;
+  height: 26px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.stateExcellent {
+  width: 70px;
+  background: #dbf8ef;
+  border: 1px solid #28a879;
+  color: #28a879;
+}
+
+.stateBad {
+  width: 56px;
+  background: #fee9ef;
+  border: 1px solid #ea1a4f;
+  color: #ea1a4f;
+}
+
+.stateGood {
+  width: 66px;
+  background: #d8e4fb;
+  border: 1px solid #adbfdf;
+  color: #122945;
+}
+
+.type {
+  flex-basis: 54px;
+}
+
+.time {
+  flex-basis: 88px;
+}
+
+.employee {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-basis: 129px;
+  height: 21px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.call {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-basis: 315px;
+}
+
+.call p {
+  margin: 0;
+  width: 100%;
+}
+
+.call p:nth-child(2) {
+  color: #5e7793;
+}
+
+.source {
+  flex-basis: 214px;
+  height: 21px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  flex-basis: 200px;
+}
+
+.duration {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-basis: 350px;
+}
+
+.formatDayContainer {
+  height: 22px;
+  padding: 0 15px 15px;
+}
+
+.formatDay {
+  position: relative;
+  width: 65px;
+  font-family: SF Pro Display;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 145%;
+  letter-spacing: 1%;
+  color: #122945;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.formatDayCounter {
+  position: absolute;
+  bottom: 5px;
+  right: -15px;
+  font-family: SF Pro Display;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #899cb1;
+}
+
+.formatCallCell {
+  font-family: SF Pro Display;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: #5e7793;
+}

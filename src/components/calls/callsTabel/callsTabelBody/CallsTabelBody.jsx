@@ -57,7 +57,7 @@ const CallItem = ({ call, audioUrl, playingCallId, setPlayingCallId }) => {
         <div className={styles[call.score[1]]}>{call.score[0]}</div>
       </li>
       <li className={styles.duration}>
-        {isHovered || isPlaying ? (
+        {(isHovered || isPlaying) && call.recordId ? (
           <audio
             className={styles.duration}
             src={audioUrl[call.id]}
@@ -66,9 +66,9 @@ const CallItem = ({ call, audioUrl, playingCallId, setPlayingCallId }) => {
             onPlay={handlePlay}
             onPause={handlePause}
           />
-        ) : (
+        ) : call.recordId ? (
           <div>{call.duration}</div>
-        )}
+        ) : null}
       </li>
     </ul>
   );
